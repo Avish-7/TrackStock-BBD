@@ -7,35 +7,35 @@ import { Link } from 'react-router-dom';
 const LogIn = () => {
     return (
         <div className="signup-wrapper">
-    <div className="left-section">
-        <p className="Heading">TrackStock</p> 
-        <img src={login_img} alt="Left Side" className="left-image" />
-    </div>
-        
-        <div className="signup-container">
+            <div className="left-section">
+                <p className="Heading">TrackStock</p>
+                <img src={login_img} alt="Left Side" className="left-image" />
+            </div>
 
-            <img src={bbd_logo_title} alt="BBD Logo" className="logo" />
-            
-            <form className="form">
-                <p className="title">Login to your account</p>
-                <p className="message">Enter your details below</p>
+            <div className="signup-container">
 
-                <label>
-                    <input required placeholder="" type="email" className="input" />
-                    <span>Email</span>
-                </label>
+                <img src={bbd_logo_title} alt="BBD Logo" className="logo" />
 
-                <label>
-                    <input required placeholder="" type="password" className="input" />
-                    <span>Password</span>
-                </label>
+                <form className="form">
+                    <p className="title">Login to your account</p>
+                    <p className="message">Enter your details below</p>
 
-                <button className="submit">Log In</button>
+                    <label>
+                        <input required placeholder="" type="email" className="input" />
+                        <span>Email</span>
+                    </label>
 
-                <p className="signin">Dont't have an account? <Link to="/signup">Sign Up</Link></p>
-            </form>
+                    <label>
+                        <input required placeholder="" type="password" className="input" />
+                        <span>Password</span>
+                    </label>
+
+                    <button className="submit"> <Link to="/admindashboard">Log In</Link> </button>
+
+                    <p className="signin">Dont't have an account? <Link to="/signup">Sign Up</Link></p>
+                </form>
+            </div>
         </div>
-    </div>
     )
 }
 
