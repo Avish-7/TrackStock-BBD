@@ -12,7 +12,7 @@ import Language from "@mui/icons-material/Language";
 
 const SideMenu = () => {
     return (
-        <Sidebar width={"270px"}>
+        <Sidebar width={"270px"} >
             <div className="logo-container">
                 <img src={logo} alt="Logo" style={{ width: "100px", height: "auto" }} />
                 <p className="AppName">TrackStock</p>

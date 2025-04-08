@@ -4,17 +4,19 @@ import LogIn from './Components/Auth/LogIn';
 import Layout from "./Components/Dashboards/Layout"; 
 import AdminDashboard from "./Components/Dashboards/AdminDashboard";
 import RepDashboard from './Components/Dashboards/RepDashboard';
+import SignUp2 from './Components/Auth/SignUp2';
 
 function App() {
     return (
         <Router>
         <Routes>
-          {/* Auth Pages (Without Sidebar) */}
+          {/* Auth Pages (Without Side menu) */}
           <Route path="/" element={<Navigate to="/signup" />} />
+          <Route path="/signup2" element={<SignUp2 />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignUp />} />
   
-          {/* Main Layout (With Sidebar) */}
+          {/* Main Layout (With Side menu) */}
           <Route element={<Layout />}>
             <Route path="/admindashboard" element={<AdminDashboard />} />
             <Route path="/repdashboard" element={<RepDashboard />} />

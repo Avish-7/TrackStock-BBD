@@ -30,7 +30,7 @@ const LogIn = () => {
                         <span>Password</span>
                     </label>
 
-                    <button className="submit"> <Link to="/admindashboard">Log In</Link> </button>
+                    <button className="submit"> Log In </button>
 
                     <p className="signin">Dont't have an account? <Link to="/signup">Sign Up</Link></p>
                 </form>
